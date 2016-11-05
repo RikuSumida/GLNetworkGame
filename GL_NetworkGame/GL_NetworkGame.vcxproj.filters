@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\Texture">
+      <UniqueIdentifier>{2a54c058-ab89-45af-be6e-b1f0665df72c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Texture">
+      <UniqueIdentifier>{5732a7ec-64e2-4143-90d8-b7f8d3bbcd3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Display">
+      <UniqueIdentifier>{271f1885-0df4-48f8-b7ad-64d2641356d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Display">
+      <UniqueIdentifier>{97964f2c-ae64-4977-aedd-5473ba8f898e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Input">
+      <UniqueIdentifier>{6d516163-6bbc-4db8-aac9-be272b763566}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Input">
+      <UniqueIdentifier>{8c060c77-8d2e-4495-8cfd-8f5456b2aadf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene">
+      <UniqueIdentifier>{61e0b81a-f596-49ff-afad-a15ef779ac21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Scene">
+      <UniqueIdentifier>{b4829ef6-1f16-4853-a86d-c7031edfe1eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameLib">
+      <UniqueIdentifier>{46b31679-aaea-4d91-a595-b146084ed463}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\GameLib">
+      <UniqueIdentifier>{de51fdd7-5237-4777-8ace-27074b0192eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Renderer">
+      <UniqueIdentifier>{72d928bb-8390-4ac1-b75d-01915c30293d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Renderer">
+      <UniqueIdentifier>{50d9a41d-6fe9-4b0d-97ed-a58b762bcc19}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="gameApp.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="textureGL.cpp">
+      <Filter>ソース ファイル\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="input.cpp">
+      <Filter>ソース ファイル\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="rendererGL.cpp">
+      <Filter>ソース ファイル\Renderer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="gameApp.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_image.h">
+      <Filter>ヘッダー ファイル\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="textureGL.h">
+      <Filter>ヘッダー ファイル\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="vertex.h">
+      <Filter>ヘッダー ファイル\Display</Filter>
+    </ClInclude>
+    <ClInclude Include="input.h">
+      <Filter>ヘッダー ファイル\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="gameVariables.h">
+      <Filter>ヘッダー ファイル\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="rendererGL.h">
+      <Filter>ヘッダー ファイル\Renderer</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
