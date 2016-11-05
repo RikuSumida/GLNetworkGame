@@ -150,20 +150,36 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="cameraGL.cpp" />
+    <ClCompile Include="game.cpp" />
     <ClCompile Include="gameApp.cpp" />
+    <ClCompile Include="gameFunctions.cpp" />
     <ClCompile Include="input.cpp" />
+    <ClCompile Include="lightGL.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="modeManager.cpp" />
     <ClCompile Include="rendererGL.cpp" />
+    <ClCompile Include="result.cpp" />
     <ClCompile Include="textureGL.cpp" />
+    <ClCompile Include="title.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="cameraGL.h" />
+    <ClInclude Include="game.h" />
     <ClInclude Include="gameApp.h" />
+    <ClInclude Include="gameFunctions.h" />
     <ClInclude Include="gameVariables.h" />
     <ClInclude Include="input.h" />
+    <ClInclude Include="lightGL.h" />
+    <ClInclude Include="list.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="mode.h" />
+    <ClInclude Include="modeManager.h" />
     <ClInclude Include="rendererGL.h" />
+    <ClInclude Include="result.h" />
     <ClInclude Include="stb_image.h" />
     <ClInclude Include="textureGL.h" />
+    <ClInclude Include="title.h" />
     <ClInclude Include="vertex.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

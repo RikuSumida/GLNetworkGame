@@ -49,6 +49,12 @@
     <Filter Include="ヘッダー ファイル\Renderer">
       <UniqueIdentifier>{50d9a41d-6fe9-4b0d-97ed-a58b762bcc19}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Modes">
+      <UniqueIdentifier>{ba93c58a-5a45-4af7-b8f4-e23bf6766f1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Modes">
+      <UniqueIdentifier>{eea5ea2b-1087-4f37-bfd3-25ddc468dea0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -65,6 +71,27 @@
     </ClCompile>
     <ClCompile Include="rendererGL.cpp">
       <Filter>ソース ファイル\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="lightGL.cpp">
+      <Filter>ソース ファイル\Display</Filter>
+    </ClCompile>
+    <ClCompile Include="title.cpp">
+      <Filter>ソース ファイル\Modes</Filter>
+    </ClCompile>
+    <ClCompile Include="game.cpp">
+      <Filter>ソース ファイル\Modes</Filter>
+    </ClCompile>
+    <ClCompile Include="result.cpp">
+      <Filter>ソース ファイル\Modes</Filter>
+    </ClCompile>
+    <ClCompile Include="modeManager.cpp">
+      <Filter>ソース ファイル\Modes</Filter>
+    </ClCompile>
+    <ClCompile Include="cameraGL.cpp">
+      <Filter>ソース ファイル\Display</Filter>
+    </ClCompile>
+    <ClCompile Include="gameFunctions.cpp">
+      <Filter>ソース ファイル\GameLib</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -91,6 +118,33 @@
     </ClInclude>
     <ClInclude Include="rendererGL.h">
       <Filter>ヘッダー ファイル\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="list.h">
+      <Filter>ヘッダー ファイル\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="lightGL.h">
+      <Filter>ヘッダー ファイル\Display</Filter>
+    </ClInclude>
+    <ClInclude Include="modeManager.h">
+      <Filter>ヘッダー ファイル\Modes</Filter>
+    </ClInclude>
+    <ClInclude Include="mode.h">
+      <Filter>ヘッダー ファイル\Modes</Filter>
+    </ClInclude>
+    <ClInclude Include="title.h">
+      <Filter>ヘッダー ファイル\Modes</Filter>
+    </ClInclude>
+    <ClInclude Include="game.h">
+      <Filter>ヘッダー ファイル\Modes</Filter>
+    </ClInclude>
+    <ClInclude Include="result.h">
+      <Filter>ヘッダー ファイル\Modes</Filter>
+    </ClInclude>
+    <ClInclude Include="cameraGL.h">
+      <Filter>ヘッダー ファイル\Display</Filter>
+    </ClInclude>
+    <ClInclude Include="gameFunctions.h">
+      <Filter>ヘッダー ファイル\GameLib</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
