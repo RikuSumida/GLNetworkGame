@@ -1,13 +1,13 @@
 #pragma once
 //------------------------------------------------------------------------------
-// Title:			Title
-// File Name:		title.h
+// Title:			Fade
+// File Name:		fade.h
 // Creator:			Nicholas Dahms
 // Creation Date:	2016/07/11
-// Updated:			2016/10/01
+// Updated:			2016/07/11
 //------------------------------------------------------------------------------
-#ifndef TITLE_H_INCLUDED
-#define TITLE_H_INCLUDED
+#ifndef FADE_H_INCLUDED
+#define FADE_H_INCLUDED
 
 //------------------------------------------------------------------------------
 // INCLUDES
@@ -15,33 +15,31 @@
 #include "mode.h"
 
 //------------------------------------------------------------------------------
-// FORWARD DECLARATIONS
+// NAMESPACE
 //------------------------------------------------------------------------------
-
-//------------------------------------------------------------------------------
-// CLASS
-//------------------------------------------------------------------------------
-class Title : public Mode
+namespace Fade
 {
-public:
+	//--------------------------------------
+	// ENUMERATES
+	//--------------------------------------
+	enum State
+	{
+		FadeNone,
+		FadeOut,
+		FadeIn
+	};
+
 	//--------------------------------------
 	// FUNCTIONS
 	//--------------------------------------
-	// Contructor / Destructor
-	Title();
-	~Title();
+	void Init( void );
+	void Uninit( void );
 
-	// Mode Functions
-	virtual void Init( void );
-	virtual void Uninit( void );
-	virtual void Update( void );
-	virtual void Draw( void );
-
-private:
-	//--------------------------------------
-	// VARIABLES
-	//--------------------------------------
-
+	void Start( Mode* nextMode );
+	void Update( void );
+	void Draw( void );
+	State GetState( void );
+	void SetColor( float r, float g, float b );
 };
 
 //------------------------------------------------------------------------------

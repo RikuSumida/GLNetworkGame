@@ -14,7 +14,7 @@
 //------------------------------------------------------------------------------
 #include "rendererGL.h"						// GL Renderer
 #include "gameVariables.h"					// Game Variables
-#include "textureGL.h"						// Textures
+#include "textureManager.h"					// Textures
 #include "vertex.h"							// Vertex Structures
 
 //------------------------------------------------------------------------------

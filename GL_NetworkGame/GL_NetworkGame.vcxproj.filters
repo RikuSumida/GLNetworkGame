@@ -55,6 +55,24 @@
     <Filter Include="ヘッダー ファイル\Modes">
       <UniqueIdentifier>{eea5ea2b-1087-4f37-bfd3-25ddc468dea0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ヘッダー ファイル\Sound">
+      <UniqueIdentifier>{bac48629-544b-4b9d-9801-7f47326641ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Sound">
+      <UniqueIdentifier>{7cd13e52-8b44-454e-ab2e-2cbfcee05e7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Display\Camera">
+      <UniqueIdentifier>{11405b75-152a-4647-b2b7-8323b9d1bd1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Display\Light">
+      <UniqueIdentifier>{165d5f22-0fdf-4d08-8fd7-031bc182bd36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Display\Camera">
+      <UniqueIdentifier>{4a0dd975-9d68-4a1e-ada3-8498307b35b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Display\Light">
+      <UniqueIdentifier>{9d70af69-db1b-4e31-a784-8620de6b4539}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -72,9 +90,6 @@
     <ClCompile Include="rendererGL.cpp">
       <Filter>ソース ファイル\Renderer</Filter>
     </ClCompile>
-    <ClCompile Include="lightGL.cpp">
-      <Filter>ソース ファイル\Display</Filter>
-    </ClCompile>
     <ClCompile Include="title.cpp">
       <Filter>ソース ファイル\Modes</Filter>
     </ClCompile>
@@ -87,11 +102,32 @@
     <ClCompile Include="modeManager.cpp">
       <Filter>ソース ファイル\Modes</Filter>
     </ClCompile>
-    <ClCompile Include="cameraGL.cpp">
-      <Filter>ソース ファイル\Display</Filter>
-    </ClCompile>
     <ClCompile Include="gameFunctions.cpp">
       <Filter>ソース ファイル\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="sceneGL.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="scene2DGL.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="scene3DGL.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="cameraGL.cpp">
+      <Filter>ソース ファイル\Display\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="lightGL.cpp">
+      <Filter>ソース ファイル\Display\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="fade.cpp">
+      <Filter>ソース ファイル\Modes</Filter>
+    </ClCompile>
+    <ClCompile Include="soundAL.cpp">
+      <Filter>ソース ファイル\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="textureManager.cpp">
+      <Filter>ソース ファイル\Texture</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -122,9 +158,6 @@
     <ClInclude Include="list.h">
       <Filter>ヘッダー ファイル\GameLib</Filter>
     </ClInclude>
-    <ClInclude Include="lightGL.h">
-      <Filter>ヘッダー ファイル\Display</Filter>
-    </ClInclude>
     <ClInclude Include="modeManager.h">
       <Filter>ヘッダー ファイル\Modes</Filter>
     </ClInclude>
@@ -140,11 +173,38 @@
     <ClInclude Include="result.h">
       <Filter>ヘッダー ファイル\Modes</Filter>
     </ClInclude>
-    <ClInclude Include="cameraGL.h">
-      <Filter>ヘッダー ファイル\Display</Filter>
-    </ClInclude>
     <ClInclude Include="gameFunctions.h">
       <Filter>ヘッダー ファイル\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="sceneGL.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="scene2DGL.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="scene3DGL.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="cameraGL.h">
+      <Filter>ヘッダー ファイル\Display\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="lightGL.h">
+      <Filter>ヘッダー ファイル\Display\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="fade.h">
+      <Filter>ヘッダー ファイル\Modes</Filter>
+    </ClInclude>
+    <ClInclude Include="soundAL.h">
+      <Filter>ヘッダー ファイル\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="al.h">
+      <Filter>ヘッダー ファイル\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="alc.h">
+      <Filter>ヘッダー ファイル\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="textureManager.h">
+      <Filter>ヘッダー ファイル\Texture</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

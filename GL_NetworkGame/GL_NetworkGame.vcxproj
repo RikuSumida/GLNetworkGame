@@ -151,6 +151,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="cameraGL.cpp" />
+    <ClCompile Include="fade.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="gameApp.cpp" />
     <ClCompile Include="gameFunctions.cpp" />
@@ -160,11 +161,19 @@
     <ClCompile Include="modeManager.cpp" />
     <ClCompile Include="rendererGL.cpp" />
     <ClCompile Include="result.cpp" />
+    <ClCompile Include="scene2DGL.cpp" />
+    <ClCompile Include="scene3DGL.cpp" />
+    <ClCompile Include="sceneGL.cpp" />
+    <ClCompile Include="soundAL.cpp" />
     <ClCompile Include="textureGL.cpp" />
+    <ClCompile Include="textureManager.cpp" />
     <ClCompile Include="title.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="al.h" />
+    <ClInclude Include="alc.h" />
     <ClInclude Include="cameraGL.h" />
+    <ClInclude Include="fade.h" />
     <ClInclude Include="game.h" />
     <ClInclude Include="gameApp.h" />
     <ClInclude Include="gameFunctions.h" />
@@ -177,8 +186,13 @@
     <ClInclude Include="modeManager.h" />
     <ClInclude Include="rendererGL.h" />
     <ClInclude Include="result.h" />
+    <ClInclude Include="scene2DGL.h" />
+    <ClInclude Include="scene3DGL.h" />
+    <ClInclude Include="sceneGL.h" />
+    <ClInclude Include="soundAL.h" />
     <ClInclude Include="stb_image.h" />
     <ClInclude Include="textureGL.h" />
+    <ClInclude Include="textureManager.h" />
     <ClInclude Include="title.h" />
     <ClInclude Include="vertex.h" />
   </ItemGroup>

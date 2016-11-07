@@ -11,6 +11,7 @@
 #include "main.h"
 #include "gameApp.h"
 #include "input.h"
+#include "modeManager.h"
 
 //------------------------------------------------------------------------------
 // FUNCTIONS
@@ -73,39 +74,9 @@ bool GameApp::Init( HINSTANCE hInstance, HWND hWnd, bool bWindow )
 	Input::InitKeyboard( hWnd, hInstance );
 	Input::InitMouse( hWnd, hInstance );
 
-	// Initialize Camera
-	// カメラの初期化
-	//m_camera = new CameraGL;
-
-	// Scene Initialization
-	// Sceneの初期化
-	//m_scene[ 0 ] = new Scene3DGL;
-	//m_scene[ 0 ]->Init();
-	//m_scene[ 0 ] = Scene3DGL::Create( Vector3(), 10, 10, "./data/texture/game_logo.jpg" );
-	//
-	//m_scene[ 1 ] = MeshBoxGL::Create(
-	//	Vector3( 0.0f, 2.0f, 0.0f ),
-	//	Vector3( 3.0f, 3.0f, 3.0f ),
-	//	Vector3(),
-	//	1,
-	//	1,
-	//	1,
-	//	1,
-	//	"./data/texture/testPNG.png" );
-	//
-	//m_scene[ 2 ] = Scene2DGL::Create(
-	//	SCREEN_WIDTH * 0.2f,
-	//	SCREEN_HEIGHT * 0.2f,
-	//	SCREEN_WIDTH * 0.3f,
-	//	SCREEN_HEIGHT * 0.3f,
-	//	"./data/texture/testPNG.png" );
-	//
-	//m_scene[ 3 ] = Scene2DGL::Create(
-	//	SCREEN_WIDTH * 0.6f,
-	//	SCREEN_HEIGHT * 0.3f,
-	//	SCREEN_WIDTH * 0.3f,
-	//	SCREEN_HEIGHT * 0.3f,
-	//	"./data/texture/testJPG.jpg" );
+	// Initialize Mode
+	// モードの初期化
+	ModeManager::SetMode( new Title );
 
 	return true;
 }
@@ -124,15 +95,14 @@ bool GameApp::Init( HINSTANCE hInstance, HWND hWnd, bool bWindow )
 //------------------------------------------------------------------------------
 void GameApp::Uninit( void )
 {
+	// Uninitialize Mode
+	// モードの終了処理
+	ModeManager::SetMode( nullptr );
+
 	// Uninitialize Input
 	// 入力の終了処理
 	Input::UninitKeyboard();
 	Input::UninitMouse();
-
-	// Unitialize Camera
-	// カメラの終了処理
-	//delete m_camera;
-	//m_camera = nullptr;
 
 	// Uninitialize Renderer
 	// Rendererの終了処理
@@ -179,25 +149,7 @@ void GameApp::Draw( void )
 	// 描画開始
 	m_rendererGL->Begin();
 	{
-		// Begin 3D Draw
-		// 3D描画開始
-		{
-			//m_camera->Set();
-
-
-		}
-		// End 3D Draw
-		// 3D描画終了処理
-
-		// Begin 2D Draw
-		// 2D描画開始
-		m_rendererGL->Begin2D();
-		{
-			
-		}
-		m_rendererGL->End2D();
-		// End 2D Draw
-		// 2D描画終了処理
+		
 	}
 	m_rendererGL->End();
 	// End Draw

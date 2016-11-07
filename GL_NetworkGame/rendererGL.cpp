@@ -312,6 +312,7 @@ void RendererGL::End( void )
 //------------------------------------------------------------------------------
 void RendererGL::Begin2D( void )
 {
+	glDisable(GL_LIGHTING);
 	glDisable( GL_DEPTH_TEST );
 	glDepthMask( 0 );
 	//glDisable( GL_CULL_FACE );
@@ -360,6 +361,7 @@ void RendererGL::End2D( void )
 	glPopMatrix();					// Pop Previous Matrix
 
 	glEnable( GL_DEPTH_TEST );
+	glEnable(GL_LIGHTING);
 	//glEnable( GL_CULL_FACE );
 	glDepthMask( 1 );
 }
