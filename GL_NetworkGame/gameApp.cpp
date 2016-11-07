@@ -149,7 +149,7 @@ void GameApp::Draw( void )
 	// •`‰æŠJn
 	m_rendererGL->Begin();
 	{
-		
+		ModeManager::GetMode()->Draw();
 	}
 	m_rendererGL->End();
 	// End Draw
